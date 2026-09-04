@@ -211,7 +211,7 @@ body {
     margin-top: 95px;
 }
 
-/* INDEX o INICIO */
+/* HOME o INICIO */
 .body-inicio {
     margin: 0;
     background-color: #ffffff;
@@ -222,7 +222,7 @@ body {
     align-items: center;
 }
 
-.contenido-global {
+.c-principal {
     width: 100%;
     display: flex;
     flex-direction: column;
