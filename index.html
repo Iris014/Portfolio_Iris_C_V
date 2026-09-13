@@ -11,30 +11,27 @@
     
     <!-- HEADER Y NAVEGACIÓN -->
     <header id="header">
-        <nav class="barra-nav">
-            <div class="c-menu">
-                <a href="#inicio" class="logo">Iris CV</a>
+        <nav class="site-navbar">
+            <div class="navbar-wrapper">
+                <a href="#inicio" class="site-logo">Iris CV</a>
                 
                 <div class="acciones-menu">
-                    <!-- Botón para alternar tema -->
-                    <button id="btn-tema" class="btn-ico" aria-label="Cambiar tema de color">
-                        <span id="ico-tema">🌙</span>
-                    </button>
-
                     <!-- Botón menú hamburguesa -->
-                    <button id="btn-menu" class="btn-menu" aria-label="Abrir menú" aria-controls="lista-enl" aria-expanded="false">
-                        <span class="ico-hamburguesa"></span>
+                    <button id="btn-menu" class="menu-toggler" aria-label="Abrir menú" aria-controls="lista-enl" aria-expanded="false">
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
                     </button>
                 </div>
                 
-                <ul id="lista-enl" class="lista-enl">
-                    <li><a href="#sobre-mi" class="enl-menu">Sobre Mí</a></li>
-                    <li><a href="#intereses" class="enl-menu">Intereses</a></li>
-                    <li><a href="#habilidades" class="enl-menu">Habilidades</a></li>
-                    <li><a href="#proyectos" class="enl-menu">Proyectos</a></li>
-                    <li><a href="#ejercicios" class="enl-menu">Ejercicios</a></li>
-                    <li><a href="#video" class="enl-menu">Video</a></li>
-                    <li><a href="#contacto" class="enl-menu">Contacto</a></li>
+                <ul id="lista-enl" class="menu-list">
+                    <li><a href="#sobre-mi" class="menu-item-link">Sobre Mí</a></li>
+                    <li><a href="#intereses" class="menu-item-link">Intereses</a></li>
+                    <li><a href="#habilidades" class="menu-item-link">Habilidades</a></li>
+                    <li><a href="#proyectos" class="menu-item-link">Proyectos</a></li>
+                    <li><a href="#ejercicios" class="menu-item-link">Ejercicios</a></li>
+                    <li><a href="#video" class="menu-item-link">Video</a></li>
+                    <li><a href="#contacto" class="menu-item-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,36 +39,36 @@
 
     <main>
         <!-- SECCIÓN INICIO -->
-        <section id="inicio" class="sec-inicio">
-            <div class="contenido-inicio">
-                <h1 class="t-principal">
-                    ¡Hola! Soy <span class="txt-destacado">Iris Ccallomamani V.</span> 👋
+        <section id="inicio" class="hero-wrapper">
+            <div class="hero-inner">
+                <h1 class="hero-main-title">
+                    ¡Hola! Soy <span class="text-gradient-effect">Iris Ccallomamani V.</span> 👋
                 </h1>
-                <p class="subtitulo">Desarrolladora Front-End Trainee | Apasionada por la Accesibilidad y el Código Limpio</p>
-                <p class="frase">"Transformo ideas en experiencias web intuitivas, accesibles y responsivas."</p>
+                <p class="hero-subheading">Desarrolladora Front-End Trainee | Apasionada por la Accesibilidad y el Código Limpio</p>
+                <p class="hero-quote-box">"Transformo ideas en experiencias web intuitivas, accesibles y responsivas."</p>
                 
-                <div class="grupo-btn">
-                    <a href="#proyectos" class="btn btn-primario">Ver Proyectos</a>
-                    <a href="#contacto" class="btn btn-secundario">Contactar</a>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="ui-btn ui-btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="ui-btn ui-btn-secondary">Contactar</a>
                 </div>
             </div>
             
-            <div class="f-decorativo">
-                <div class="mancha-c mancha-1"></div>
-                <div class="mancha-c mancha-2"></div>
-                <div class="mancha-c mancha-3"></div>
+            <div class="hero-bg-layer">
+                <div class="bg-blob blob-alpha"></div>
+                <div class="bg-blob blob-beta"></div>
+                <div class="bg-blob blob-gamma"></div>
             </div>
         </section>
 
         <!-- SECCIÓN SOBRE MÍ -->
-        <section id="sobre-mi" class="sec">
-            <div class="c">
-                <h2 class="t-sec">💡 Sobre Mí</h2>
-                <div class="contenido-sobre-mi">
-                    <div class="txt-sobre-mi">
+        <section id="sobre-mi" class="site-section">
+            <div class="layout-container">
+                <h2 class="heading-primary">💡 Sobre Mí</h2>
+                <div class="about-wrapper">
+                    <div class="about-description">
                         <p>Soy una desarrolladora Front-End en constante formación a través de Skillnest, centrada en la creación de interfaces web modernas y adaptables. Mi objetivo es construir soluciones digitales que no solo se vean bien, sino que ofrezcan una excelente experiencia de usuario (UX) y sean accesibles para todas las personas.</p>
                         <p>Me defino como una persona <strong>analítica, autodidacta y orientada al detalle</strong>, apasionada por resolver problemas cotidianos mediante tecnología semántica y estructurada.</p>
-                        <div class="datos-personales">
+                        <div class="about-meta-box">
                             <p><strong>📍 Ubicación:</strong> Santiago, Chile</p>
                             <p><strong>💼 Disponibilidad:</strong> Abierta a oportunidades de práctica, proyectos freelance y primer empleo TI.</p>
                         </div>
@@ -81,30 +78,31 @@
         </section>
 
         <!-- SECCIÓN INTERESES -->
-        <section id="intereses" class="sec f-oscuro">
-            <div class="c">
-                <h2 class="t-sec">🎯 Mis Pilares de Desarrollo</h2>
-                <div class="grid-intereses">
-                    <div class="t-interes">
-                        <div class="ico-interes">♿</div>
+        <section id="intereses" class="site-section section-themed-dark">
+            <div class="layout-container">
+                <h2 class="heading-primary">🎯 Mis Pilares de Desarrollo</h2>
+                <!-- Mantengo la clase de grid original para compatibilidad estructural si añades CSS grid aquí -->
+                <div class="grid-intereses" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="interest-item-card">
+                        <div class="interest-card-icon">♿</div>
                         <h3>Desarrollo Front-End Inclusivo y Accesibilidad (A11y)</h3>
                         <p>Mi enfoque principal es construir interfaces donde la accesibilidad no sea una opción secundaria, sino la base del diseño. Me apasiona crear experiencias web adaptadas a la neurodiversidad y con bajo nivel de fricción cognitiva.</p>
                     </div>
                     
-                    <div class="t-interes">
-                        <div class="ico-interes">📱</div>
+                    <div class="interest-item-card">
+                        <div class="interest-card-icon">📱</div>
                         <h3>Diseño Responsivo y Ergonomía Digital</h3>
                         <p>Me interesa garantizar que cualquier producto web funcione con fluidez y naturalidad en múltiples dispositivos (móvil, tablet, escritorio), aplicando metodologías Mobile-First.</p>
                     </div>
                     
-                    <div class="t-interes">
-                        <div class="ico-interes">🧹</div>
+                    <div class="interest-item-card">
+                        <div class="interest-card-icon">🧹</div>
                         <h3>Código Limpio y Semántico</h3>
                         <p>Valoro la arquitectura estructurada, aplicando la separación de responsabilidades (HTML semántico + CSS modular + JavaScript funcional) para facilitar el mantenimiento y la escalabilidad del proyecto.</p>
                     </div>
                     
-                    <div class="t-interes">
-                        <div class="ico-interes">🌍</div>
+                    <div class="interest-item-card">
+                        <div class="interest-card-icon">🌍</div>
                         <h3>Tecnología con Impacto Social</h3>
                         <p>Busco colaborar en proyectos digitales donde el código responda a necesidades humanas reales, transformando problemas cotidianos en herramientas digitales intuitivas.</p>
                     </div>
@@ -113,40 +111,40 @@
         </section>
 
         <!-- SECCIÓN HABILIDADES -->
-        <section id="habilidades" class="sec">
-            <div class="c">
-                <h2 class="t-sec">🧰 Tecnologías y Habilidades</h2>
-                <p class="sub-sec">Herramientas y tecnologías que utilizo para construir experiencias web accesibles y funcionales.</p>
+        <section id="habilidades" class="site-section">
+            <div class="layout-container">
+                <h2 class="heading-primary">🧰 Tecnologías y Habilidades</h2>
+                <p class="heading-secondary">Herramientas y tecnologías que utilizo para construir experiencias web accesibles y funcionales.</p>
                 
-                <div class="grid-habilidades">
-                    <div class="t-habilidad">
-                        <h3 class="t-habilidad-titulo">💻 Front-End Core</h3>
-                        <div class="grupo-etiquetas">
-                            <span class="etiqueta etiqueta-principal">HTML5 Semántico</span>
-                            <span class="etiqueta etiqueta-principal">CSS3 / Flexbox</span>
-                            <span class="etiqueta etiqueta-principal">JavaScript ES6+</span>
-                            <span class="etiqueta etiqueta-principal">Accesibilidad (A11y)</span>
+                <div class="grid-habilidades" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="skill-item-card">
+                        <h3 class="skill-item-title">💻 Front-End Core</h3>
+                        <div class="badge-group">
+                            <span class="ui-badge ui-badge-primary">HTML5 Semántico</span>
+                            <span class="ui-badge ui-badge-primary">CSS3 / Flexbox</span>
+                            <span class="ui-badge ui-badge-primary">JavaScript ES6+</span>
+                            <span class="ui-badge ui-badge-primary">Accesibilidad (A11y)</span>
                         </div>
                     </div>
 
-                    <div class="t-habilidad">
-                        <h3 class="t-habilidad-titulo">🛠️ Herramientas</h3>
-                        <div class="grupo-etiquetas">
-                            <span class="etiqueta etiqueta-herramienta">Git</span>
-                            <span class="etiqueta etiqueta-herramienta">GitHub</span>
-                            <span class="etiqueta etiqueta-herramienta">GitHub Pages</span>
-                            <span class="etiqueta etiqueta-herramienta">VS Code</span>
-                            <span class="etiqueta etiqueta-herramienta">Chrome DevTools</span>
+                    <div class="skill-item-card">
+                        <h3 class="skill-item-title">🛠️ Herramientas</h3>
+                        <div class="badge-group">
+                            <span class="ui-badge ui-badge-secondary">Git</span>
+                            <span class="ui-badge ui-badge-secondary">GitHub</span>
+                            <span class="ui-badge ui-badge-secondary">GitHub Pages</span>
+                            <span class="ui-badge ui-badge-secondary">VS Code</span>
+                            <span class="ui-badge ui-badge-secondary">Chrome DevTools</span>
                         </div>
                     </div>
 
-                    <div class="t-habilidad">
-                        <h3 class="t-habilidad-titulo">🌱 En Desarrollo</h3>
-                        <div class="grupo-etiquetas">
-                            <span class="etiqueta etiqueta-aprendizaje">React.js</span>
-                            <span class="etiqueta etiqueta-aprendizaje">APIs REST</span>
-                            <span class="etiqueta etiqueta-aprendizaje">SASS / Tailwind</span>
-                            <span class="etiqueta etiqueta-aprendizaje">Figma to Code</span>
+                    <div class="skill-item-card">
+                        <h3 class="skill-item-title">🌱 En Desarrollo</h3>
+                        <div class="badge-group">
+                            <span class="ui-badge ui-badge-success">React.js</span>
+                            <span class="ui-badge ui-badge-success">APIs REST</span>
+                            <span class="ui-badge ui-badge-success">SASS / Tailwind</span>
+                            <span class="ui-badge ui-badge-success">Figma to Code</span>
                         </div>
                     </div>
                 </div>
@@ -154,57 +152,57 @@
         </section>
 
         <!-- SECCIÓN PROYECTOS -->
-        <section id="proyectos" class="sec f-oscuro">
-            <div class="c">
-                <h2 class="t-sec">📂 Proyectos Destacados</h2>
+        <section id="proyectos" class="site-section section-themed-dark">
+            <div class="layout-container">
+                <h2 class="heading-primary">📂 Proyectos Destacados</h2>
                 
-                <div class="grid-proyectos">
-                    <div class="t-proyecto">
-                        <div class="c-img">
-                            <div class="img-proyecto">🚀 NeuroMundo</div>
+                <div class="grid-proyectos" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    <div class="project-item-card">
+                        <div class="project-media-wrapper">
+                            <div class="project-media-label">🚀 NeuroMundo</div>
                         </div>
-                        <div class="info-proyecto">
+                        <div class="project-details">
                             <h3>NeuroMundo - App para Familias con Personas TEA</h3>
                             <p>Aplicación web interactiva que permite a los usuarios solucionar problemas cotidianos y compartir sus experiencias mediante horarios, guías y material dinámico con gráficos.</p>
-                            <div class="tecnologias-usadas">
-                                <span class="etiqueta-tec">HTML5</span>
-                                <span class="etiqueta-tec">CSS3</span>
-                                <span class="etiqueta-tec">JavaScript</span>
-                                <span class="etiqueta-tec">LocalStorage</span>
+                            <div class="project-tags-list">
+                                <span class="tag-item">HTML5</span>
+                                <span class="tag-item">CSS3</span>
+                                <span class="tag-item">JavaScript</span>
+                                <span class="tag-item">LocalStorage</span>
                             </div>
-                            <div class="features-proyecto">
+                            <div class="project-highlights">
                                 <span>📱 100% Responsivo</span>
                                 <span>🌙 Modo Oscuro</span>
                                 <span>💾 Persistencia Local</span>
                             </div>
-                            <div class="enlaces-proyecto">
-                                <a href="https://iris014.github.io/App-Neuro-Mundo/" class="btn-enlace" target="_blank" rel="noopener noreferrer">🌐 Demo</a>
-                                <a href="https://github.com/Iris014/App-Neuro-Mundo" class="btn-enlace" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+                            <div class="project-actions">
+                                <a href="https://iris014.github.io/App-Neuro-Mundo/" class="ui-btn-link" target="_blank" rel="noopener noreferrer">🌐 Demo</a>
+                                <a href="https://github.com/Iris014/App-Neuro-Mundo" class="ui-btn-link" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="t-proyecto">
-                        <div class="c-img">
-                            <div class="img-proyecto">💻 TaskFlow</div>
+                    <div class="project-item-card">
+                        <div class="project-media-wrapper">
+                            <div class="project-media-label">💻 TaskFlow</div>
                         </div>
-                        <div class="info-proyecto">
+                        <div class="project-details">
                             <h3>TaskFlow - Gestor de Tareas Interactivo</h3>
                             <p>Panel de administración de tareas diarias con filtrado por estado (pendientes, completadas) y validación de formularios en tiempo real.</p>
-                            <div class="tecnologias-usadas">
-                                <span class="etiqueta-tec">HTML5</span>
-                                <span class="etiqueta-tec">CSS Variables</span>
-                                <span class="etiqueta-tec">JavaScript</span>
-                                <span class="etiqueta-tec">Glassmorphism</span>
+                            <div class="project-tags-list">
+                                <span class="tag-item">HTML5</span>
+                                <span class="tag-item">CSS Variables</span>
+                                <span class="tag-item">JavaScript</span>
+                                <span class="tag-item">Glassmorphism</span>
                             </div>
-                            <div class="features-proyecto">
+                            <div class="project-highlights">
                                 <span>🔍 Filtro Dinámico</span>
                                 <span>⚠️ Validación Visual</span>
                                 <span>🎨 UI Moderna</span>
                             </div>
-                            <div class="enlaces-proyecto">
-                                <a href="#" class="btn-enlace" target="_blank" rel="noopener noreferrer">🌐 Demo</a>
-                                <a href="#" class="btn-enlace" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+                            <div class="project-actions">
+                                <a href="#" class="ui-btn-link" target="_blank" rel="noopener noreferrer">🌐 Demo</a>
+                                <a href="#" class="ui-btn-link" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -213,44 +211,44 @@
         </section>
 
         <!-- SECCIÓN EJERCICIOS -->
-        <section id="ejercicios" class="sec">
-            <div class="c">
-                <h2 class="t-sec">🧪 Ejercicios Prácticos y Laboratorios</h2>
+        <section id="ejercicios" class="site-section">
+            <div class="layout-container">
+                <h2 class="heading-primary">🧪 Ejercicios Prácticos y Laboratorios</h2>
                 
-                <div class="grid-ejercicios">
-                    <div class="t-ejercicio">
+                <div class="grid-ejercicios" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="mini-project-item-card">
                         <h3>🟡 Validador de Formularios con JS</h3>
                         <p>Pequeño script interactivo para validar correo, contraseña y campos requeridos antes del envío.</p>
-                        <div class="tec-ejercicio">
+                        <div class="mini-project-tags">
                             <span>HTML</span> · <span>CSS</span> · <span>JavaScript Vanilla</span>
                         </div>
-                        <div class="enlaces-ejercicio">
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <div class="mini-project-actions">
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">Demo</a>
                         </div>
                     </div>
 
-                    <div class="t-ejercicio">
+                    <div class="mini-project-item-card">
                         <h3>🔵 Catálogo Interactivo con Filtros</h3>
                         <p>Ejercicio de manipulación de arrays (filter, map) para renderizar productos dinámicamente.</p>
-                        <div class="tec-ejercicio">
+                        <div class="mini-project-tags">
                             <span>JavaScript ES6</span> · <span>Bootstrap 5</span>
                         </div>
-                        <div class="enlaces-ejercicio">
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <div class="mini-project-actions">
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">Demo</a>
                         </div>
                     </div>
 
-                    <div class="t-ejercicio">
+                    <div class="mini-project-item-card">
                         <h3>🟣 Layout Responsivo con CSS Grid</h3>
                         <p>Recreación de una maqueta compleja adaptada a pantallas móviles, tablets y escritorio.</p>
-                        <div class="tec-ejercicio">
+                        <div class="mini-project-tags">
                             <span>CSS3</span> · <span>Media Queries</span> · <span>BEM Naming</span>
                         </div>
-                        <div class="enlaces-ejercicio">
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            <a href="#" class="btn-enlace-sm" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <div class="mini-project-actions">
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#" class="ui-btn-link-sm" target="_blank" rel="noopener noreferrer">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -258,44 +256,44 @@
         </section>
 
         <!-- SECCIÓN VIDEO -->
-        <section id="video" class="sec f-oscuro">
-            <div class="c">
-                <h2 class="t-sec">🎬 Presentación en Video</h2>
-                <p class="sub-sec">En este video te muestro quién soy, mi proceso de aprendizaje en Skillnest y el funcionamiento práctico de mi proyecto principal.</p>
-                <div class="c-video">
-                    <div class="marcador-video">
-                        <div class="ico-reproducir">▶️</div>
+        <section id="video" class="site-section section-themed-dark">
+            <div class="layout-container">
+                <h2 class="heading-primary">🎬 Presentación en Video</h2>
+                <p class="heading-secondary">En este video te muestro quién soy, mi proceso de aprendizaje en Skillnest y el funcionamiento práctico de mi proyecto principal.</p>
+                <div class="video-wrapper">
+                    <div class="video-fallback">
+                        <div class="video-fallback-icon">▶️</div>
                         <p>Video de presentación</p>
-                        <p class="nota-video">Video o archivo local</p>
+                        <p class="video-fallback-note">Video o archivo local</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SECCIÓN CONTACTO -->
-        <section id="contacto" class="sec">
-            <div class="c">
-                <h2 class="t-sec">📬 ¡Hablemos!</h2>
-                <p class="sub-sec">¿Tienes una consulta, propuesta de proyecto o quieres conectar? Estoy disponible para conversar.</p>
+        <section id="contacto" class="site-section">
+            <div class="layout-container">
+                <h2 class="heading-primary">📬 ¡Hablemos!</h2>
+                <p class="heading-secondary">¿Tienes una consulta, propuesta de proyecto o quieres conectar? Estoy disponible para conversar.</p>
                 
-                <div class="contenido-contacto">
-                    <div class="lista-contacto">
-                        <div class="item-contacto">
-                            <span class="ico-contacto">📧</span>
+                <div class="contact-wrapper">
+                    <div class="contact-list">
+                        <div class="contact-card">
+                            <span class="contact-card-icon">📧</span>
                             <div>
                                 <h3>Correo Electrónico</h3>
                                 <a href="mailto:irisccallomamani@liceovvh.cl">irisccallomamani@liceovvh.cl</a>
                             </div>
                         </div>
-                        <div class="item-contacto">
-                            <span class="ico-contacto">💼</span>
+                        <div class="contact-card">
+                            <span class="contact-card-icon">💼</span>
                             <div>
                                 <h3>LinkedIn</h3>
                                 <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">linkedin.com/in/</a>
                             </div>
                         </div>
-                        <div class="item-contacto">
-                            <span class="ico-contacto">🐙</span>
+                        <div class="contact-card">
+                            <span class="contact-card-icon">🐙</span>
                             <div>
                                 <h3>GitHub</h3>
                                 <a href="https://github.com/Iris014" target="_blank" rel="noopener noreferrer">github.com/Iris014</a>
@@ -308,8 +306,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="c">
+    <footer class="site-footer">
+        <div class="layout-container">
             <p>© 2026 Iris C. V. · Creado con HTML, CSS y JavaScript · Desarrollado durante el proceso de formación en Skillnest.</p>
         </div>
     </footer>
