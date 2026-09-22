@@ -158,11 +158,11 @@ header {
 }
 
 .toggle-line {
-    width: 25px;
+    width: 30px;
     height: 3px;
-    background: var(--primary);
-    border-radius: 2px;
-    transition: 0.3s ease;
+    background-color: var(--primary);
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hero-wrapper {
@@ -753,8 +753,8 @@ header {
 }
 
 .video-wrapper {
-    width: 1100px;
-    height: 600px;
+    width: 95%;
+    height: 90%;
     margin: 0 auto;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -876,6 +876,22 @@ header {
 
     .menu-toggler {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .menu-toggler.is-active .line-top {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggler.is-active .line-middle {
+        opacity: 0;
+    }
+
+    .menu-toggler.is-active .line-bottom {
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .hero-actions {
@@ -933,23 +949,6 @@ header {
     transform: translateY(0);
 }
 
-
-.menu-toggler.is-active .toggle-line {
-    display: none;
-}
-
-.menu-toggler.is-active::before {
-    content: "\2715";
-    font-size: 28px;
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    line-height: 1;
-}
-
 .sensory-toggle {
     position: relative;
     width: 42px;
@@ -1003,7 +1002,6 @@ header {
 
 /* TEMA CLARO */
 body.light-theme {
-    --primary: #00d4ff;
     --primary-dark: #0099cc;
     --primary-light: #0284c7;
     --secondary: #b829dd;
@@ -1016,6 +1014,7 @@ body.light-theme {
     --bg-card-hover: #ffffff;
 
     --text-primary: #0f172a;
+    --primary: #00d4ff;
     --text-secondary: #334155;
     --text-muted: #64748b;
 
@@ -1998,22 +1997,6 @@ body.light-theme .animate-fade-in {
 
 body.light-theme .animate-fade-in.is-visible {
     transform: translateY(0);
-}
-
-body.light-theme .menu-toggler.is-active .toggle-line {
-    display: none;
-}
-
-body.light-theme .menu-toggler.is-active::before {
-    content: "\2715";
-    font-size: 28px;
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    line-height: 1;
 }
 
 body.light-theme .sensory-toggle {
