@@ -25,13 +25,18 @@ body {
     --text-primary: #ffffff;
     --text-secondary: #a0aec0;
     --text-muted: #718096;
-    
+
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     --gradient-text: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
     --gradient-bg: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
 }
@@ -188,49 +193,63 @@ header {
     border-radius: 0.5rem;
 }
 
-.grad-1{
+.grad-1 {
     color: #00F2FE;
 }
-.grad-2{
+
+.grad-2 {
     color: #0DE3FC;
 }
-.grad-3{
+
+.grad-3 {
     color: #1BD3FA;
 }
-.grad-4{
+
+.grad-4 {
     color: #28C4F8;
 }
-.grad-5{
+
+.grad-5 {
     color: #36B4F6;
 }
-.grad-6{
+
+.grad-6 {
     color: #43A5F4;
 }
-.grad-7{
+
+.grad-7 {
     color: #5196F2;
 }
-.grad-8{
+
+.grad-8 {
     color: #5E86F0;
 }
-.grad-9{
+
+.grad-9 {
     color: #6C77EE;
 }
-.grad-10{
+
+.grad-10 {
     color: #7967EC;
 }
-.grad-11{
+
+.grad-11 {
     color: #8758EA;
 }
-.grad-12{
+
+.grad-12 {
     color: #9448E8;
 }
-.grad-13{
+
+.grad-13 {
     color: #A239E6;
 }
-.grad-14{
+
+.grad-14 {
     color: #AF29E4;
 }
-.grad-15{
+
+.grad-15 {
     color: #B829DD;
 }
 
@@ -916,7 +935,7 @@ header {
 
 
 .menu-toggler.is-active .toggle-line {
-    display: none; 
+    display: none;
 }
 
 .menu-toggler.is-active::before {
@@ -955,6 +974,31 @@ header {
 
 .sensory-toggle:active {
     transform: scale(0.95);
+}
+
+.theme-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    box-shadow:
+        0 -8px 0 -8px var(--primary-light), 0 8px 0 -8px var(--primary-light),
+        -8px 0 0 -8px var(--primary-light), 8px 0 0 -8px var(--primary-light),
+        -6px -6px 0 -8px var(--primary-light), 6px 6px 0 -8px var(--primary-light),
+        -6px 6px 0 -8px var(--primary-light), 6px -6px 0 -8px var(--primary-light);
+}
+
+.moon-mask {
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    background: var(--bg-dark);
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
 }
 
 /* TEMA CLARO */
@@ -1103,7 +1147,12 @@ body.light-theme .ui-btn-secondary:hover {
     }
 }
 
-body.light-theme h1, h2, h3, h4, h5, h6 {
+body.light-theme h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
 }
@@ -1163,7 +1212,8 @@ body.light-theme .heading-secondary {
 }
 
 body.light-theme header {
-    background: rgba(255, 255, 255, 0.82); /* Tema claro */
+    background: rgba(255, 255, 255, 0.82);
+    /* Tema claro */
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
@@ -1237,11 +1287,9 @@ body.light-theme .hero-wrapper {
     overflow: hidden;
 
     position: relative;
-    background-image: linear-gradient(
-        135deg,
-        rgba(248, 250, 252, 0.88) 0%,
-        rgba(241, 245, 249, 0.658) 100%
-    ), url('../images/tecnologia-digital-800x480.jpg');
+    background-image: linear-gradient(135deg,
+            rgba(248, 250, 252, 0.88) 0%,
+            rgba(241, 245, 249, 0.658) 100%), url('../images/tecnologia-digital-800x480.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1277,6 +1325,7 @@ body.light-theme .text-gradient-effect {
     padding: 0.1em 0.4em;
     border-radius: 0.5rem;
 }
+
 body.light-theme .max-width {
     max-width: 800px;
 }
@@ -1305,21 +1354,65 @@ body.light-theme .hero-actions {
     flex-wrap: wrap;
 }
 
-body.light-theme .grad-1 { color: #00F2FE; }
-body.light-theme .grad-2 { color: #0DE3FC; }
-body.light-theme .grad-3 { color: #1BD3FA; }
-body.light-theme .grad-4 { color: #28C4F8; }
-body.light-theme .grad-5 { color: #36B4F6; }
-body.light-theme .grad-6 { color: #43A5F4; }
-body.light-theme .grad-7 { color: #5196F2; }
-body.light-theme .grad-8 { color: #5E86F0; }
-body.light-theme .grad-9 { color: #6C77EE; }
-body.light-theme .grad-10 { color: #7967EC; }
-body.light-theme .grad-11 { color: #8758EA; }
-body.light-theme .grad-12 { color: #9448E8; }
-body.light-theme .grad-13 { color: #A239E6; }
-body.light-theme .grad-14 { color: #AF29E4; }
-body.light-theme .grad-15 { color: #B829DD; }
+body.light-theme .grad-1 {
+    color: #00F2FE;
+}
+
+body.light-theme .grad-2 {
+    color: #0DE3FC;
+}
+
+body.light-theme .grad-3 {
+    color: #1BD3FA;
+}
+
+body.light-theme .grad-4 {
+    color: #28C4F8;
+}
+
+body.light-theme .grad-5 {
+    color: #36B4F6;
+}
+
+body.light-theme .grad-6 {
+    color: #43A5F4;
+}
+
+body.light-theme .grad-7 {
+    color: #5196F2;
+}
+
+body.light-theme .grad-8 {
+    color: #5E86F0;
+}
+
+body.light-theme .grad-9 {
+    color: #6C77EE;
+}
+
+body.light-theme .grad-10 {
+    color: #7967EC;
+}
+
+body.light-theme .grad-11 {
+    color: #8758EA;
+}
+
+body.light-theme .grad-12 {
+    color: #9448E8;
+}
+
+body.light-theme .grad-13 {
+    color: #A239E6;
+}
+
+body.light-theme .grad-14 {
+    color: #AF29E4;
+}
+
+body.light-theme .grad-15 {
+    color: #B829DD;
+}
 
 
 body.light-theme .bg-blob {
@@ -1533,7 +1626,7 @@ body.light-theme .skill-media-overlay {
 }
 
 body.light-theme .skill-media-label {
-    color: var(--text-primary);
+    color: var(--text-muted);
     font-size: 1.25rem;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -1611,8 +1704,8 @@ body.light-theme .badge-group {
 }
 
 body.light-theme .grid-intereses,
-.grid-habilidadesbody.light-theme ,
-.grid-proyectosbody.light-theme ,
+.grid-habilidadesbody.light-theme,
+.grid-proyectosbody.light-theme,
 .grid-ejerciciobody.light-theme s {
     display: flex;
     flex-wrap: wrap;
@@ -1848,11 +1941,9 @@ body.light-theme .contact-card a {
 
 body.light-theme #contacto {
     position: relative;
-    background-image: linear-gradient(
-        135deg,
-        rgba(248, 250, 252, 0.88) 0%,
-        rgba(241, 245, 249, 0.658) 100%
-    ), url('../images/singapur-city.jpg');
+    background-image: linear-gradient(135deg,
+            rgba(248, 250, 252, 0.88) 0%,
+            rgba(241, 245, 249, 0.658) 100%), url('../images/singapur-city.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1910,7 +2001,7 @@ body.light-theme .animate-fade-in.is-visible {
 }
 
 body.light-theme .menu-toggler.is-active .toggle-line {
-    display: none; 
+    display: none;
 }
 
 body.light-theme .menu-toggler.is-active::before {
@@ -1924,6 +2015,7 @@ body.light-theme .menu-toggler.is-active::before {
     height: 100%;
     line-height: 1;
 }
+
 body.light-theme .sensory-toggle {
     position: relative;
     width: 42px;
@@ -1946,4 +2038,18 @@ body.light-theme .sensory-toggle:hover {
 
 body.light-theme .sensory-toggle:active {
     transform: scale(0.95);
+}
+
+body.light-theme .theme-icon {
+    background: var(--text-primary);
+    box-shadow:
+        0 -6px 0 -6px var(--primary), 0 6px 0 -6px var(--primary),
+        -6px 0 0 -6px var(--primary), 6px 0 0 -6px var(--primary),
+        -4px -4px 0 -6px var(--primary), 4px 4px 0 -6px var(--primary),
+        -4px 4px 0 -6px var(--primary), 4px -4px 0 -6px var(--primary);
+}
+
+body.light-theme .moon-mask {
+    transform: translateX(-20px) scale(0);
+    background: var(--bg-card);
 }
